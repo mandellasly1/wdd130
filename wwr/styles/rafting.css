@@ -34,7 +34,43 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+.hero {
+    position: relative;
+}
+
+article {
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+}
+
+.hero article img {
+    float: right;
+    width: 140px;
+    height: 150px;
+    position: relative;
+
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 45%;
+    padding: 10px;
+    text-align: left;
+    opacity: 0.8;
+    background-color: var(--accent-color1);
+    color: white; /* white text - make sure there is enough contrast with the background- color */
+}
+
+
+
+p,  article {
+    margin: 10px;
+    padding: 4px;
+}
+
+nav, section {
     margin: 16px;
     padding: 8px;
 }
@@ -54,5 +90,4 @@ footer {
     font-family: var(--body-font);
     color: var(--accent-color1);
 }
-
 
