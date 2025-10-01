@@ -29,6 +29,41 @@ header, main, footer {
     margin: 0 auto;
 }
 
+.site-header img {
+  display: grid;
+  grid-template-columns: auto 1fr; /* logo takes natural width, nav fills rest */
+  align-items: center;             /* vertically center both logo and nav */
+  padding: 25 25px;
+  background: var(--accent-color2);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* flex inside nav for horizontal links */
+.nav-bar ul {
+  display: flex;          
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar li {
+  margin-left: 40px;
+  padding: 0.5rem 1rem;  /* reduce top/bottom space */
+  height: 0.8pc;       
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -49,7 +84,6 @@ article {
     width: 140px;
     height: 150px;
     position: relative;
-
 }
 
 h1 {
@@ -70,6 +104,11 @@ p,  article {
     padding: 4px;
 }
 
+figure  {
+      width: 128px;
+      height: auto;
+}
+
 nav, section {
     margin: 16px;
     padding: 8px;
@@ -77,6 +116,7 @@ nav, section {
 
 .socialmedia a {
     text-decoration: none;
+    float: right;
 }
 
 ul, li, a {
