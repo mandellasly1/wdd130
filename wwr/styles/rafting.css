@@ -115,7 +115,7 @@ p,  article {
 figure.horizontal {
   display: flex;          /* places children side by side */
   align-items: center;    /* vertically align image and caption */
-  gap: 1px;              /* space between image and caption */
+  gap: 0.2px;              /* space between image and caption */
 }
 
 figure.horizontal img {
