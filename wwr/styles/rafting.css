@@ -112,6 +112,17 @@ p,  article {
     padding: 4px;
 }
 
+figure.horizontal {
+  display: flex;          /* places children side by side */
+  align-items: center;    /* vertically align image and caption */
+  gap: 1px;              /* space between image and caption */
+}
+
+figure.horizontal img {
+  max-width: 128px;       /* control image size */
+}
+
+
 figure img {
     display: flex;
     justify-content: flex-end;
