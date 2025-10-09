@@ -29,7 +29,7 @@ header, main, footer {
     margin: 0 auto;
 }
 
-.site-header img {
+.site-header {
   display: grid;
   grid-template-columns: auto 1fr; /* logo takes natural width, nav fills rest */
   align-items: center;             /* vertically center both logo and nav */
