@@ -29,17 +29,9 @@ header, main, footer {
     margin: 0 auto;
 }
 
-.site-header {
-  display: grid;
-  grid-template-columns: auto 1fr; /* logo takes natural width, nav fills rest */
-  align-items: center;             /* vertically center both logo and nav */
-  padding: 25 25px;
-  background: var(--accent-color2);
-}
-
 header {
-    display: flex; 
-    grid-template-columns: 50px 0.5fr 0.5fr;
+    display: grid; 
+    grid-template-columns: 50px 1fr;
     align-items: center;
 }
 
@@ -59,7 +51,7 @@ header {
 }
 
 .nav-bar li {
-  margin-left: 50px;
+  margin-left: 60px;
   padding: 0.5rem 0.5rem;  /* reduce top/bottom space */
   height: 0.8pc;       
 }
@@ -105,17 +97,21 @@ h1 {
     color: white; /* white text - make sure there is enough contrast with the background- color */
 }
 
-
+h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
 
 p,  article {
     margin: 10px;
     padding: 4px;
 }
 
-figure.horizontal {
-  display: flex;          /* places children side by side */
-  align-items: center;    /* vertically align image and caption */
-  gap: 4px;              /* space between image and caption */
+.horizontal {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
 }
 
 figure.horizontal img {
@@ -124,10 +120,8 @@ figure.horizontal img {
 
 
 figure img {
-    display: flex;
-    justify-content: flex-end;
-    width: 128px;
-    height: auto;
+    
+    width: 90%;
 }
 
 
@@ -136,12 +130,9 @@ nav, section {
     padding: 8px;
 }
 
-.socialmedia a {
+.socialmedia {
   display: flex;    
-  flex-direction: row;
-  float: right;
-  margin: 0%;
-  padding: 0%;
+  align-items: center;
 }
 
 ul, li, a {
@@ -152,15 +143,10 @@ ul, li, a {
 }
 
 footer {
-    
-    display: flex; 
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center; 
-    width: 80%;
-    margin: 0%;
-    padding: 4%;
-    font-family: var(--body-font);
-    color: var(--accent-color1);
+  display: flex; 
+  align-items: center;
+  padding: none;
+  font-family: var(--body-font);
+  color: var(--accent-color1);
 }
 
