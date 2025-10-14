@@ -62,8 +62,6 @@ header {
   text-align: center;
 }
 
-
-
 h1, h2, h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -180,8 +178,6 @@ footer {
   font-family: var(--body-font);
   color: var(--accent-color1);
 }
-
-
 
 
 
