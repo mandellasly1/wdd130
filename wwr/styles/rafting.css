@@ -98,7 +98,7 @@ h1 {
 }
 
 h2 {
-    text-align: left;
+    text-align: center;
 }
 
 h3 {
@@ -128,7 +128,12 @@ main section {
   margin: 1;
   padding: 5px;
   text-wrap: calc(1);
+}
 
+.main div {
+  display: flex; 
+  align-items: center;
+  padding: none;
 }
 
 .horizontal {
@@ -146,6 +151,10 @@ figure img {
     width: 90%;
 }
 
+p {
+  align-items: center;
+  text-align: center;
+}
 
 nav, section {
     margin: 16px;
