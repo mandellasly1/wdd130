@@ -53,7 +53,10 @@ header {
 .nav-bar li {
   margin-left: 60px;
   padding: 0.5rem 0.5rem;  /* reduce top/bottom space */
-  height: 0.8pc;       
+  height: 0.8pc;  
+  text-decoration: none;
+  color: white;
+  text-align: center;     
 }
 
 .nav-bar a {
